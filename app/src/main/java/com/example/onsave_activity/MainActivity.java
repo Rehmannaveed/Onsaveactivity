@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putInt("", counter);
+        outState.putInt("Counter", counter);
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        savedInstanceState.getInt("" ,counter);
+        counter = savedInstanceState.getInt("Counter" );
     }
 }
